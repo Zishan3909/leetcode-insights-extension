@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "LeetCode Insights",
-  "version": "1.0",
-  "description": "Displays company tags and frequency insights on LeetCode problem lists.",
+  "version": "1.1",
+  "description": "Displays company tags, frequency insights, and an interactive 3D mascot companion on LeetCode.",
   "permissions": ["storage"],
   "host_permissions": ["*://leetcode.com/*"],
   "content_scripts": [
@@ -14,7 +14,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["data.json"],
+      "resources": ["data.json", "assets/*"],
       "matches": ["*://leetcode.com/*"]
     }
   ],
